@@ -1,0 +1,72 @@
+{
+  "1": {
+    "columns": [
+      "name",
+      "varchar",
+      "(",
+      "5"
+    ]
+  },
+  "3": {
+    "columns": [
+      "name",
+      "varchar",
+      "(",
+      "6"
+    ]
+  },
+  "4": {
+    "columns": [
+      "name",
+      "varchar",
+      "(",
+      "6"
+    ]
+  },
+  "Students": {
+    "columns": [
+      "id",
+      "INT",
+      "name",
+      "TEXT",
+      "age",
+      "INT",
+      "grade",
+      "TEXT"
+    ]
+  },
+  "Courses": {
+    "columns": [
+      "course_id",
+      "INT",
+      "course_name",
+      "TEXT",
+      "instructor",
+      "TEXT",
+      "credits",
+      "INT"
+    ]
+  },
+  "Employees": {
+    "columns": [
+      "emp_id",
+      "INT",
+      "name",
+      "TEXT",
+      "department",
+      "TEXT",
+      "salary",
+      "INT"
+    ]
+  },
+  "anjali": {
+    "columns": [
+      "roll",
+      "int",
+      "name",
+      "varchar",
+      "(",
+      "10"
+    ]
+  }
+}
