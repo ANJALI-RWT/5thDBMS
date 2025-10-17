@@ -1,0 +1,118 @@
+<!-- public/index.html
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mini SQL CLI + DB Visualization</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mini SQL CLI + Backend Visualization</h1>
+  <div class="container">
+    <div class="left">
+      <h2>SQL CLI</h2>
+      <textarea id="sqlInput" placeholder="Type SQL: CREATE TABLE, INSERT, SELECT ..."></textarea>
+      <div>
+        <button id="runBtn">Execute</button>
+        <button id="recoverBtn">Recover (replay WAL)</button>
+      </div>
+
+      <h3>Result</h3>
+      <div id="resultArea"></div>
+    </div>
+
+    <div class="right">
+      <h2>Backend Visualization</h2>
+      <div class="panel">
+        <h3>Tokens</h3>
+        <pre id="tokens"></pre>
+      </div>
+      <div class="panel">
+        <h3>Parse Tree</h3>
+        <pre id="parseTree"></pre>
+      </div>
+      <div class="panel">
+        <h3>Plan</h3>
+        <pre id="plan"></pre>
+      </div>
+      <div class="panel">
+        <h3>Execution Steps</h3>
+        <pre id="steps"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html> -->
+<!-- public/index.html -->
+
+
+<!-- public/index.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mini SQL CLI + DB Visualization</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Make visualization panels scrollable */
+    .panel pre {
+      max-height: 200px;
+      overflow-y: auto;
+      background-color: #f8f8f8;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+
+    /* Optional: ensure result table fits nicely */
+    #resultArea table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    #resultArea th, #resultArea td {
+      border: 1px solid #aaa;
+      padding: 4px 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mini SQL CLI + Backend Visualization</h1>
+  <div class="container">
+    <div class="left">
+      <h2>SQL CLI</h2>
+      <textarea id="sqlInput" rows="8" cols="50" placeholder="Type SQL: CREATE TABLE, INSERT, SELECT ..."></textarea>
+      <div>
+        <button id="runBtn">Execute</button>
+        <button id="recoverBtn">Recover (replay WAL)</button>
+      </div>
+
+      <h3>Result</h3>
+      <div id="resultArea"></div>
+    </div>
+
+    <div class="right">
+      <h2>Backend Visualization</h2>
+      <div class="panel">
+        <h3>Tokens</h3>
+        <pre id="tokens"></pre>
+      </div>
+      <div class="panel">
+        <h3>Parse Tree</h3>
+        <pre id="parseTree"></pre>
+      </div>
+      <div class="panel">
+        <h3>Plan</h3>
+        <pre id="plan"></pre>
+      </div>
+      <div class="panel">
+        <h3>Execution Steps</h3>
+        <pre id="steps"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>
